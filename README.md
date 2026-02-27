@@ -3,7 +3,7 @@
 A modern, premium School Management System built with PHP, Oracle Database, and Vanilla CSS/JS.
 
 ## Features
-- **Modern UI**: Dark theme with glassmorphism effects and Inter typography.
+- **Modern UI**: Light theme with glassmorphism effects and Inter typography.
 - **Role-Based Access**: Specialized dashboards and permissions for Admins, Teachers, and Students.
 - **Oracle Integration**: Fully connected to your `schema.sql`.
 - **Responsive Design**: Works across different screen sizes.
@@ -11,7 +11,7 @@ A modern, premium School Management System built with PHP, Oracle Database, and 
 ## Setup Instructions
 1. **Database**: 
    - Ensure your Oracle Database is running.
-   - Run the provided `schema.sql` to create the tables.
+   - Run the provided `schema.sql`(@C:\path\to\schema.sql) to create the tables.
    - Update `config/db.php` with your connection details (user, password, host).
 
 2. **PHP Extension**:
@@ -22,7 +22,7 @@ A modern, premium School Management System built with PHP, Oracle Database, and 
    - Access via `http://localhost/SMS`.
 
 4. **Default Login**:
-   - Since no users are in the schema initially, you'll need to insert an admin user manually:
+   - The admin user is `admin` and password `admin123`:
      ```sql
      INSERT INTO USERS (USER_ID, USERNAME, PASSWORD, ROLE) 
      VALUES (1, 'admin', 'admin123', 'admin');
